@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+   height: 100%;
+   width: 100%; 
+}
+
+main{
+    display: flex;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    border-style: dashed;
+    border-width: 3px;
+}
+
+
+#box1{
+    background-color: rgb(117, 176, 231);
+}
+#box2{
+    background-color: rgb(117, 231, 197);
+}
+#box3{
+    background-color: rgb(231, 117, 193);
+}
+   

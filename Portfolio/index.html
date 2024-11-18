@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/624bbe8d6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+     <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-text">
+            <p>2nd Year,Learning</p>
+            <h1>Hi, I'm <span>Shubham</span><br>Student From India</h1>
+        </div>
+     </div>
+   </div>
+  
+   <!--------------About section---------------->
+
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <img src="user.png" alt="">
+            </div>
+            <div class="col-2">
+                <h1 class="text">About me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis eum illum quia ratione aliquid inventore ipsa corporis vitae voluptatibus quibusdam, velit facere accusamus assumenda nobis, magnam ducimus tempore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, repudiandae. Iusto omnis, laudantium esse cum placeat porro et, nesciunt, eligendi asperiores praesentium quam ullam inventore consequuntur? Quidem, cum. Velit, illum.></p>
+           
+
+            <div class="titles">
+                <p class="tab-links active-link" onclick="opentab('learning')">Learning</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('objective')">Objective</p>
+            </div>
+
+            <div class="tab-content active-tab" id="learning">
+                <ul>
+                    <li><span>Wordpress</span><br>Design Websites</li>
+                    <li><span>Languages</span><br>C/Java/HTML/CSS/Javascript</li>
+                    <li><span>Database</span><br>Oracle/SQL</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="education">
+                <ul>
+                    <li><span>Higher Education</span><br>St.Mary Junior college</li>
+                    <li><span>Professional Education</span><br>BCA, 2nd Year</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="objective">
+                <ul>
+                    <li><span>To be</span><br>Software Enginner</li>
+                    <li><span>Masters</span><br>MCA</li>
+                    <li><span>Crack</span><br>Top MNC's</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+
+<!-- ---------------Services Section------------------- -->
+
+    <div id="Services">
+        <div class="container">
+            <h1 class="font">Services</h1>
+
+            <div class="Services-list">
+               <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit possimus ducimus amet voluptas.</p>
+                <a href="#">Learn more</a> 
+                </div>
+
+                <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Designer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit possimus ducimus amet voluptas.</p>
+                <a href="#">Learn more</a> 
+               </div>
+
+               <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI Designer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit possimus ducimus amet voluptas.</p>
+                <a href="#">Learn more</a> 
+               </div>
+            </div>
+            </div>
+        </div>
+   
+
+
+    <!-- -----------------------Portfolio------------------------- -->
+
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="font">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This app connect you with Talented People around the World</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>This app connect you with Talented People around the World</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>This app connect you with Talented People around the World</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn">See More</button>
+        </div>
+    </div>
+
+    <!-- -----------------------------Contanct Me-------------------------------------- -->
+
+    <div id="contact">
+        <div class="container-contact">
+            <div class="contact-left">
+                <h1 style="margin-top: 15px;">Contact-Details</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> Shubhs@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i> 3785735728</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>  
+            </div>
+            <div class="contact-right">
+                <div class="form-div">
+                  <form>
+                    <input type="text" class="name"  name="Name" placeholder=" Enter Your Name" required>
+                    <input type="email" class="email"  name="email" placeholder=" Enter Your email" required> <br>
+                     <textarea name="" rows="5" placeholder="Messege" id=""></textarea>
+                    <button type="submit" class="btn btn2" style="margin-left: 270px; margin-top : 20px;">Submit</button>
+                   </form>
+            </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- ----------------------------Copyright----------------------------- -->
+      <div class="copyright">
+        <p>Copyright @Shubham, Made with <i class="fa-solid fa-heart"></i> for learning purpose</p>
+      </div>
+ </div> 
+
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shape{
+    height: 200px;
+    width: 200px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid black;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    position: absolute;
+}

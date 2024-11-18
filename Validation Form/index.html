@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Defines the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on all devices -->
+    <title>Validation Form</title> <!-- The title of the web page, shown in the browser tab -->
+
+    <!-- Link to Font Awesome library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Container to center and structure the form content -->
+    <div class="container">
+        <!-- Box element that contains the entire form -->
+        <div class="box">
+            <!-- Header section for the form -->
+            <header class="signup-header">
+                <h1>Signup</h1> <!-- Title for the signup form -->
+            </header>
+
+            <!-- Main section containing the form inputs -->
+            <main class="signup-body">
+                <!-- Form element with no action, as validation happens on the client side -->
+                <form action="#">
+                    <!-- Full Name input field -->
+                    <p>
+                        <label for="name">Full Name:</label> <!-- Label for the name input -->
+                        <input type="text" placeholder="Enter Full Name" id="name"> <!-- Input for user's full name -->
+                        <i class="fa-solid"></i> <!-- Icon to indicate validity (dynamic via JavaScript) -->
+                        <span id="nameError"></span> <!-- Span to display error messages for name -->
+                    </p>
+
+                    <!-- Email input field -->
+                    <p>
+                        <label for="email">Email:</label> <!-- Label for the email input -->
+                        <input type="email" placeholder="xyz@gmail.com" id="email"> <!-- Input for user's email -->
+                        <i class="fa-solid"></i> <!-- Icon to indicate validity (dynamic via JavaScript) -->
+                        <span id="emailError"></span> <!-- Span to display error messages for email -->
+                    </p>
+
+                    <!-- Password input field -->
+                    <p>
+                        <label for="password">Password:</label> <!-- Label for the password input -->
+                        <input type="password" placeholder="Enter atleast 8 characters" id="password"> <!-- Input for password -->
+                        <i class="fa-solid"></i> <!-- Icon to indicate validity (dynamic via JavaScript) -->
+                        <span id="passwordError"></span> <!-- Span to display error messages for password -->
+                    </p>
+
+                    <!-- Confirm Password input field -->
+                    <p>
+                        <label for="conpassword">Confirm Password:</label> <!-- Label for confirm password input -->
+                        <input type="password" placeholder="Enter Confirm Password" id="conpassword"> <!-- Input for confirming password -->
+                        <i class="fa-solid"></i> <!-- Icon to indicate validity (dynamic via JavaScript) -->
+                        <span id="conpasswordError"></span> <!-- Span to display error messages for confirm password -->
+                    </p>
+
+                    <!-- Submit button -->
+                    <p>
+                        <input type="submit" value="Create Account" id="submitBtn"> <!-- Button to submit the form -->
+                    </p>
+                </form>
+            </main>
+
+            <!-- Footer section for additional links -->
+            <footer class="signup-footer">
+                <p>Have an already Account? <a href="#">Login</a></p> <!-- Link to login page -->
+            </footer>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file for validation logic -->
+    <script src="script.js"></script>
+</body>
+
+</html>

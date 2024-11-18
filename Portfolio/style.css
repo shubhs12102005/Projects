@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808; 
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin: 10% 0;
+}
+
+.header-text p{
+    font-size: 40px;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+
+/*------- About Section -------*/
+
+#about{
+    padding: 80px;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-1{
+    flex-basis: 35%;
+}
+
+.col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.col-2{
+    flex-basis: 60%;
+}
+
+.text{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.titles{
+    display: flex;
+    margin: 30px 0 40px;
+}
+
+.tab-links{
+    margin-right: 70px;
+    font-size: 20px;
+    font-weight: 50;
+    position: relative ;
+    cursor: pointer;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    left: 0;
+    bottom: -6px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+width: 50%;
+}
+
+.tab-content ul li{
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.tab-content ul li span{
+    color: #b54769;
+    font-size: 20px;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.active-tab{
+    display: block;
+}
+
+/* -----------------Services Section-------------------- */
+
+#Services{
+    padding: 40px;
+}
+
+.font{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.Services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.Services-list h2{
+    color: #fff;
+}
+
+.Services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: background 0.5s ,transform 0.5s;
+}
+
+.Services-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.Services-list div h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.Services-list div p{
+    margin-bottom: 15px;
+}
+
+.Services-list div a{
+   text-decoration: none;
+   color: #fff;
+   margin-top: 30px;
+}
+
+.Services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+/* ----------------------Portfolio---------------------------- */
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    display: block;
+    border-radius: 10%;
+    transition: transform 0.5s;
+}
+
+.work img:hover{
+    transform: scale(1.1);
+}
+
+.layer{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ff004f;
+    text-align: center;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    margin: 50px;
+    margin-left: 475px;
+    padding: 15px 30px 15px 30px;
+    background-color: #080808;
+    border: 1px solid #ff004f;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+
+.btn:hover{
+    background-color: #ff004f;
+}
+
+
+/* --------------------------Contact Me----------------------------------- */
+
+.contact-left{
+    flex-basis: 30%;
+    margin-left: 200px;
+}
+
+.contact-right{
+    flex-basis: 60%;
+    margin-left: 100px;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #ff004f;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    font-size: 40px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    margin-right: 20px;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: scale(1.2);
+}
+
+.container-contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-div{
+    height: 400px;
+    width: 800px;
+}
+
+.btn.btn2{
+  display: inline-block;
+  background: #ff004f;
+  text-align: center;
+
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 90%;
+    background: #262626;
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    margin-right: 300px;
+    cursor: pointer;
+}
+
+.copyright{
+    margin-top: 30px;
+    width: 100%;
+    height: 70px;
+    background:  #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.copyright i{
+    color: #ff004f;
+}
+
+
+/* ----------------------Making Responsivness for smart-phones---------------------------- */
+
+@media only screen and (max-width: 600px){
+
+    #header{
+        background-image: url(phone-background.png);
+    }
+
+    .header-text {
+        margin-top: 10%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+        
+    }
+}

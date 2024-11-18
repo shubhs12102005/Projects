@@ -1,0 +1,37 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 110px;
+    width: 90px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius:10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card img{
+    /* height is not given because image can go outside the boundry */
+    width: 90%;
+}
+

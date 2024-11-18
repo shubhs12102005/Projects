@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    padding: 5px;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+   padding: 0% 30%;
+}
+
+header h1{
+    text-align: center;
+    background-color: #ffca3a;
+}
+
+#img{
+    display: flex;
+    justify-content: center;
+    margin-right: 200px;
+}
+
+#img img{
+    height: 30%;
+    width: 30%;
+    object-fit: cover;
+}
+
+footer{
+    padding: 0% 30%;
+ }
+ 
+ footer p{
+     text-align: center;
+     background-color: #ffca3a;
+ }
+
+ button{
+    border-radius: 5px;
+ }

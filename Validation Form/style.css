@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0; /* Remove default margin from all elements */
+    padding: 0; /* Remove default padding from all elements */
+    box-sizing: border-box; /* Include padding and border in width/height calculations */
+    font-family: sans-serif; /* Set default font family to sans-serif */
+    color: #fff; /* Set default text color to white */
+}
+
+/* Container for the entire page */
+.container {
+    width: 100%; /* Make the container span the full width of the page */
+    height: 100vh; /* Set the height to fill the entire viewport */
+    background: url(wave-haikei.png) no-repeat; /* Set the background image with no repeating */
+    background-size: cover; /* Ensure the background image covers the entire container */
+}
+
+/* Form container box styling */
+.box {
+    width: 400px; /* Set a fixed width for the form box */
+    position: relative; /* Position the form relative to its parent */
+    top: 50%; /* Center the box vertically */
+    left: 50%; /* Center the box horizontally */
+    transform: translate(-50%, -50%); /* Adjust the position for perfect centering */
+    box-shadow: 2px 2px 5px #89c9f3, -2px -2px 5px #89c9f3; /* Add a glowing shadow effect */
+    border-radius: 8px; /* Round the corners of the box */
+    backdrop-filter: blur(8px); /* Apply a blur effect to the background underneath the box */
+    padding: 20px 40px; /* Add padding inside the box for spacing */
+}
+
+/* Header section of the form */
+.signup-header {
+    text-align: center; /* Align the header text to the center */
+    font-size: 1.5rem; /* Set the font size for the header */
+    padding: 5px 10px; /* Add padding to the header for spacing */
+}
+
+/* Body section of the form */
+.signup-body p {
+    margin-block: 20px; /* Add vertical spacing between paragraphs */
+    position: relative; /* Allow child elements (e.g., icons) to be positioned absolutely */
+}
+
+.signup-body p label {
+    font-size: 18px; /* Increase the font size of labels */
+    font-weight: 700; /* Make the label text bold */
+}
+
+.signup-body p input {
+    width: 100%; /* Make input fields span the full width of the parent container */
+    padding: 10px; /* Add padding inside the input fields */
+    border-radius: 6px; /* Round the corners of the input fields */
+    border: none; /* Remove the default border */
+    outline: none; /* Remove the focus outline */
+    color: #000; /* Set the text color inside the input fields to black */
+    font-weight: 500; /* Use medium font weight */
+}
+
+/* Submit button styling */
+.signup-body p input[type="submit"] {
+    border: none; /* Remove border */
+    background-color: #3498db; /* Set a blue background color */
+    color: #fff; /* Set the text color to white */
+    font-size: 20px; /* Increase the font size for the button */
+    font-weight: 700; /* Make the button text bold */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+/* Hover effect for the submit button */
+.signup-body p input[type="submit"]:hover {
+    background-color: #2773a5; /* Change the button's background to a darker blue on hover */
+}
+
+/* Styling for additional text (e.g., error or success messages) */
+.signup-body p span {
+    color: #7fffd4; /* Set the text color to a light aqua */
+}
+
+/* Icon styling within input fields */
+.signup-body p i {
+    position: absolute; /* Position the icon relative to the parent */
+    top: 27px; /* Adjust the icon's position vertically */
+    right: 15px; /* Align the icon to the right of the input field */
+    font-size: 25px; /* Increase the size of the icon */
+    color: #3498db; /* Set the icon color to blue */
+}
+
+/* Footer section styling */
+.signup-footer p {
+    text-align: center; /* Center-align footer text */
+    font-size: 17px; /* Set the font size for footer text */
+    font-weight: 500; /* Use medium font weight */
+}
+
+/* Styling for footer links */
+.signup-footer p a {
+    text-decoration: none; /* Remove the underline from links */
+    font-size: 18px; /* Increase the font size of the links */
+}
+
+/* Hover effect for footer links */
+.signup-footer p a:hover {
+    text-decoration: underline; /* Add an underline to links on hover */
+}

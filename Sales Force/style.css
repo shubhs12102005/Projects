@@ -1,0 +1,227 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#header{
+    height: 13%;
+    width: 100%;
+    position: fixed;  /* It will fixed as scroll*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+#logo{
+    height: 70%;
+}
+
+#logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(4, 4, 90);
+    font-weight: bold;
+}
+
+.text:hover{
+    color: rgb(33, 142, 192);
+}
+
+#more{
+    display: flex;
+}
+
+#ContactDetails{
+    text-align: center;
+}
+
+.icon{
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icon:hover{
+    background-color: lightblue;
+}
+
+#login{
+    display: flex;
+    padding: 10px;
+    border-radius: 50px;
+
+}
+
+#login:hover{
+    background-color: lightblue;
+}
+
+#try{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: green;
+    color: white;
+}
+
+#try:hover{
+    background-color:darkgreen ;
+}
+
+
+#fakeheader{
+    height: 13%;
+    width: 100%;
+}
+
+#page1{
+    height: 87%;   /* I given 100% because header is fixed for that it will go upside,means it is only 90%*/
+    width: 100%;
+    background-color:wheat;
+}
+
+#strip{
+    height: 8%;
+    width: 100%;
+    background-color: rgb(64, 64, 247);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#strip u{
+    margin: 20px;
+}
+
+#content{
+   height: 76%;
+   width: 100%;
+   background-color: wheat;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+#box1{
+    height: 90%;
+    width: 47%;
+    background-color: azure;
+}
+
+#box1 h1{
+    font-size: 50px;
+    color: rgb(4, 4, 105);
+    margin: 25px;
+}
+
+#box1 p{
+    margin: 25px;
+    font-size: x-large;
+    font-weight: lighter;
+}
+#btns{
+    display: flex;
+   
+}
+
+#btn1{
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    margin: 10px;
+    width: 23%;
+    background-color: rgb(38, 111, 207);
+    color: white;
+
+}
+
+#btn1:hover{
+   background-color: rgb(67, 67, 192);
+}
+
+#btn2{
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid rgb(61, 150, 180);
+    border-radius: 5px;
+    margin: 10px;
+    width: 23%;
+    background-color:white;
+    color:rgb(0, 125, 167);
+}
+
+#btn2:hover{
+    border: 1px solid black;
+    background-color: rgb(114, 233, 193);
+    color:black;
+}
+
+
+#box2{
+    height: 90%;
+    width: 47%;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #box2 img{
+    padding-right: 2%;
+    height: 100%;
+    width: 100%;
+} */
+
+#card{
+    height: 250px;
+    width: 500px;
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#card video{
+    height: 50%;
+    width: 100%;
+    /* background-color: aqua;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden; */
+}
+
+#heading{
+    height: 16%;
+    width: 100%;
+    color: rgb(16, 16, 105);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2{
+    height: 87%;
+    width: 100%;
+    background-color: rgb(0, 255, 76);
+}
