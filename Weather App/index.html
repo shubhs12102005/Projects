@@ -13,8 +13,14 @@
     <div class="container">
         <div class="search-box">
             <input type="text" placeholder="Enter your Location" id="header-input">
-            <button class="fa-solid fa-magnifying-glass"></button>
+            <button class="fa-solid fa-magnifying-glass" id="weatherBtn"></button>
         </div>
+
+        <div class="location-not-found">
+            <h1>Error,Location not found</h1>
+            <img src="404.png" alt="">
+        </div>
+
         <div class="weather-body">
             <img src="cloud.png" alt="Weather Image" class="weather-image">
 
@@ -22,13 +28,13 @@
                 <p class="tempreture">0 <sup>°C</sup></p>
                 <p class="description">Ligth Rain</p>
             </div>
-        </div>
+        
 
         <div class="weather-details">
             <div class="humidity">
                 <i class="fa-solid fa-droplet"></i>
                 <div class="text">
-                    <span id="span">45%</span>
+                    <span class="Humidity">45%</span>
                     <p>Humidity</p>
                 </div>
             </div>
@@ -36,12 +42,13 @@
             <div class="wind">
                 <i class="fa-solid fa-wind"></i>
                 <div class="text">
-                    <span>90Km/Hr</span>
+                    <span class="Wind">90Km/Hr</span>
                     <p>Wind Speed</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
     <script src="script.js"></script>
 </body>
